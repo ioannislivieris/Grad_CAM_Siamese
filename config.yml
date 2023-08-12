@@ -1,0 +1,50 @@
+data_path: 'Data/Flowers'  
+number_of_iterations: 1
+# Model name
+backbone_model: 'ResNet50' # MobileNet, ResNet50
+pretrained: True
+checkpoints_path: 'checkpoints/Flowers'
+test_size: 0.1
+valid_size: 0.1
+# Image processing
+image:
+    size: [320, 320] # [600, 400] # [320, 320] # [1200, 800]
+    normalization:
+        mean: [0.485, 0.456, 0.406]
+        std: [0.229, 0.224, 0.225]
+    Channels: 3
+    HorizontalFlip: 0.5 # Probability
+    VerticalFlip: 0.5 # Probability
+    RandomRotationDegrees: 45 # Degrees 
+    brightness: 0.0
+    contrast: 0.0
+    saturation: 0.0
+    hue: 0.0
+# Training model hyperparameters    
+hyperparameters:    
+    epochs: 100
+    verbose: True
+    batch_size: 4
+    num_workers: 0
+    optimizer: 'Adam' # SGD, Adam
+    learning_rate: 5e-6
+    weight_decay: 0.01
+    momentum: 0.9
+    nesterov: False
+    max_norm: 1.0
+early_stopping:
+    patience: 25
+    min_delta: 0.00000001
+LRScheduler:
+    patience: 15
+    min_lr:  0.00000001 
+    factor: 0.5
+    verbose: True    
+# Checkpoint:
+#     metric: 'loss'
+#     mode: 'min'
+#     verbose: True
+# Other parameters    
+seed: 42
+cuda: True
+gpu: 0
