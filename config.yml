@@ -26,7 +26,7 @@ hyperparameters:
     verbose: True
     batch_size: 4
     num_workers: 0
-    optimizer: 'Adam' # SGD, Adam
+    optimizer: 'Adam' # Choices: SGD, Adam, AdamW
     learning_rate: 5e-6
     weight_decay: 0.01
     momentum: 0.9
@@ -40,10 +40,6 @@ LRScheduler:
     min_lr:  0.00000001 
     factor: 0.5
     verbose: True    
-# Checkpoint:
-#     metric: 'loss'
-#     mode: 'min'
-#     verbose: True
 # Other parameters    
 seed: 42
 cuda: True
