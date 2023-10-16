@@ -1,13 +1,15 @@
 # Explainability on Siamese Networks
 
 This repository presents the implementation code for paper: **Explainable Image Similarity: Integrating Siamese Networks and
-Grad-CAM**. 
+Grad-CAM**. The manuscript is published in *Journal of Imaging*.
 
 **Abstract:** With the proliferation of image-based applications in various domains, the need for accurate and interpretable image similarity measures has become increasingly critical. Existing image similarity models often lack transparency, making it challenging to understand the reasons why two 
 images are considered similar. In this paper, we propose the concept of explainable image similarity, where the goal is the development of a framework, which is capable of providing similarity scores along with visual intuitive explanations for its decisions. To achieve this, we present a new approach, which integrates Siamese Networks and Grad-CAM for providing explainable image similarity and discuss the potential benefits and challenges of adopting this approach. In addition, we provide a 
 comprehensive discussion about factual and counterfactual explanations provided by the proposed framework for assisting decision making. The proposed approach has the potential to enhance the interpretability, trustworthiness and user acceptance of image-based systems in real-world image similarity applications.
 
 **Keywords:** Explainable AI; Siamese networks; Grad-CAM; Interpretability.
+
+**Cite:** Livieris IE, Pintelas E, Kiriakidou N, Pintelas P. [Explainable Image Similarity: Integrating Siamese Networks and Grad-CAM](https://doi.org/10.3390/jimaging9100224). Journal of Imaging. 2023; 9(10):224. 
 
 <br/>
 
